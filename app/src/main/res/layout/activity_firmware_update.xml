@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context="com.example.jb.bluetooth.FirmwareUpdate">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.00">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4">
+
+            <TextView
+                android:text="FIRMWARE UPDATE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="24sp"
+                android:gravity="left"
+                android:padding="15dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txttitle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update the firmware of the M100. Process may take awhile. Please check that: "
+                android:textColor="#FFFFFF"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                />
+
+            <TextView
+                android:text="-Phone is in Airplane mode. Leave Bluetooth on.\n\n-M100 is fully charged.\n\n-Phone is fully charged\n\n-Bluetooth remains on ALWAYS!.\n"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:textColor="#FFFFFF"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView27" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Console"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:id="@+id/txtformat" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/consoleprogress" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/scrollViewVspOut"
+                android:background="#ffffffff"
+                android:layout_weight="0.94">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/consolevalue" />
+
+            </ScrollView>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginBottom="5dp"
+            android:text="Ready to start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/startbtn"
+            android:onClick="start"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/scanningbtn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#EF5350">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#EF5350"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/list_number"
+                android:id="@+id/icon_img"
+                android:padding="6dip"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHECK DRESSING TAPE"
+                android:textColor="#FFFFFF"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/talking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:gravity="left"
+                android:text="Check that the dressing tape is holding the entire surface of the electrodes in contact with skin or wound. Replace or add dressing tape if necessary."
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Title Of Song-->
+
+    <!-- Artist Name -->
+
+    <!-- Rightend Duration -->
+
+
+</RelativeLayout>

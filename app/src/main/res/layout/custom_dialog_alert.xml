@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DA5F6A"
+        >
+
+
+        <TextView
+            android:text="Select Auto Or Manual"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView36" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_rotate"
+            android:id="@+id/imageView4"
+            android:tint="#000000"
+            android:background="#FFFFFF"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="AUTOMATIC "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:id="@+id/txt1"
+            android:layout_weight="2" />
+
+        <CheckBox
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox_auto"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+            android:id="@+id/imageView3"
+            android:tint="#000000"
+            android:background="#FFFFFF"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text=" MANUAL         "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:id="@+id/txt2"
+            android:layout_weight="2" />
+
+        <CheckBox
+            android:text=" "
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:id="@+id/checkBox_manual"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/manual_bar">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="1 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView39"
+                android:textSize="18dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:text="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView37"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3"
+        android:progress="3"
+        android:id="@+id/seekBar2"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:minHeight="6dip"
+        android:maxHeight="6dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="CANCEL"
+            android:id="@+id/btn_cancel"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#DA5F6A"
+            android:textColor="#ffffffff"
+            android:layout_weight="8" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:id="@+id/btn_ok"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#F44336"
+            android:textColor="#ffffffff"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

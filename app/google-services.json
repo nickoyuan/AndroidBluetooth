@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "172911573656",
+    "firebase_url": "https://testproject-97a27.firebaseio.com",
+    "project_id": "testproject-97a27",
+    "storage_bucket": "testproject-97a27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172911573656:android:f7fe2e396883b60e",
+        "android_client_info": {
+          "package_name": "com.example.jb.bluetooth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172911573656-abc7tbskt631m5tgrdmtdvqjru3otdii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7JZPIj42KUYsmCTv8OOsaFDdyXHPqPDw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

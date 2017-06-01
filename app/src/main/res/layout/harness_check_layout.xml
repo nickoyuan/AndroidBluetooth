@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DA5F6A">
+
+        <TextView
+            android:text="Instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="40px"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txttitle" />
+
+        <Button
+            android:text="X"
+            android:background="#DA5F6A"
+            android:textColor="#FFFFFF"
+            android:layout_width="70px"
+            android:textSize="40px"
+            android:layout_marginRight="10px"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/closebtn" />
+    </RelativeLayout>
+
+    <ListView
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:id="@+id/harness_list" />
+
+    <Button
+        android:text="Ok I Understand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:background="#FFFFFF"
+        android:id="@+id/cancelbtn" />
+
+</LinearLayout>

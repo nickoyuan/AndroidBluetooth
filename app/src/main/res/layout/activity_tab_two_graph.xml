@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tab_two_graph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jb.bluetooth.TabTwoGraph">
+
+
+    <TextView
+        android:text="M100 Summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4B98DC"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:id="@+id/textView24" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4B98DC"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:background="#4B98DC"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Time Period"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:background="@drawable/text_background"
+                    android:id="@+id/textView29" />
+
+                <TextView
+                    android:text="12.01"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/text_background"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView28" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4B98DC">
+
+                <TextView
+                    android:text="Open Load %"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/text_background"
+                    android:id="@+id/textView30" />
+
+                <TextView
+                    android:text="5.1"
+                    android:gravity="right"
+                    android:textColor="#FFFFFF"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/text_background"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView31" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:text="Alert"
+                    android:background="#4B98DC"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignEnd="@+id/main_gauge"
+                    android:layout_marginEnd="149dp"
+                    android:id="@+id/button2"
+                    android:onClick="testing"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4B98DC"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4B98DC">
+
+                <TextView
+                    android:text="MAX R %"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/text_background"
+                    android:id="@+id/textView32" />
+
+                <TextView
+                    android:text="5.1"
+                    android:gravity="right"
+                    android:textColor="#FFFFFF"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/text_background"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView33" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4B98DC">
+
+                <TextView
+                    android:text="OK %"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/text_background"
+                    android:id="@+id/textView34" />
+
+                <TextView
+                    android:text="5.1"
+                    android:gravity="right"
+                    android:textColor="#FFFFFF"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/text_background"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView35" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
